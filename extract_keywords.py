@@ -4,12 +4,8 @@ import spacy  # type: ignore
 import subprocess
 import sys
 
-# Ensure the English language model is available
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-    nlp = spacy.load("en_core_web_sm")
+# Load spaCy model directly (already installed via requirements.txt)
+nlp = spacy.load("en_core_web_sm")
 
 def extract_keywords_from_jd(jd_text: str) -> list:
     """
