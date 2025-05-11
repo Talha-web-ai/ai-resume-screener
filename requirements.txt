@@ -3,3 +3,4 @@ pymupdf
 pandas
 altair
 scikit-learn
+spacy
