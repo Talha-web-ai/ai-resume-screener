@@ -1,9 +1,15 @@
 # extract_keywords.py
 
-import spacy # type: ignore
+import spacy  # type: ignore
+import subprocess
+import sys
 
-# Load English language model
-nlp = spacy.load("en_core_web_sm")
+# Ensure the English language model is available
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
 def extract_keywords_from_jd(jd_text: str) -> list:
     """
@@ -32,12 +38,3 @@ def extract_keywords_from_resume(resume_text: str) -> list:
     doc = nlp(resume_text)
     keywords = [token.text.lower() for token in doc if token.pos_ in {"NOUN", "PROPN", "ADJ"} and not token.is_stop]
     return list(set(keywords))  # Remove duplicates
-
-
-
-
-
- #We are looking for a Data Analyst with experience in SQL, Python, Excel, and Power BI.
-   # Responsibilities include data cleaning, dashboard creation, and insights presentation.
-    #Knowledge of statistics and communication skills are a plus.
-    
