@@ -1,0 +1,106 @@
+
+---
+
+### ⚙️ `.gitignore`
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environment variables and local IDE settings
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+*.DS_Store
+
+# Streamlit config
+.streamlit/
+
+# VSCode config
+.vscode/
+
+---
+
+### ⚙️ `.gitignore`
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environment variables and local IDE settings
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+*.DS_Store
+
+# Streamlit config
+.streamlit/
+
+# VSCode config
+.vscode/
